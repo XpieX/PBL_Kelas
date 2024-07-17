@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Map</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+        }
+        nav {
+            width: 50%;
+            background-color: #fd9c00;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+            height: 100%;
+            box-sizing: border-box;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+        }
+        nav ul li {
+            margin: 15px 0;
+            width: 100%;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: block;
+            text-align: center;
+            background-color: #4e7479;
+            border-radius: 5px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    nav ul li a:hover {
+            background-color: rgb(53, 103, 134);
+        }
+        header {
+            flex-grow: 1;
+            padding: 20px;
+            position: relative;
+        }
+        .calendar {
+            position: absolute;
+            top: 0px;
+            left: 680px;
+            width: 300px; /* adjust the width as needed */
+            height: auto;
+            background-color: #f0f0f0; /* background color for the calendar area */
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .calendar input {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Daftar Ruangan</a></li>
+            <li><a href="">Pinjam Ruangan</a></li>
+            <li><a href="">Kalender</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>PENGUNAAN RUANGAN </h1>
+        <h2>PRODI TEKNIK INFORMATIKA</h2>
+        <div class="calendar">
+            <input type="date">
+        </div>
+    </header>
+</body>
+</html>
