@@ -7,7 +7,7 @@ body {
 header {
     background-color: #D32F2F;
     color: white;
-    padding: 10px 0;
+    padding: 0px 20px;
 }
 
 .header-content {
@@ -82,8 +82,7 @@ h1 {
 }
 
 .Nav-list{
-    padding: 1rem;
-    border: solid 1px black;
+    padding: 3rem;
 }
 
 .Nav-list:hover{
