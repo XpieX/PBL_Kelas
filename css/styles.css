@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -78,4 +79,53 @@ main {
 
 h1 {
     margin: 0;
+}
+
+/* Classroom List Styles */
+.list-kelas_atas, .list-kelas_kiri, .list-kelas_kanan, .list-kelas_Bawah {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.list-kelas_atas {
+    justify-content: center;
+    grid-column: 2 / span 3;
+}
+
+.list-kelas_kiri {
+    flex-direction: column;
+    align-items: center;
+    grid-row: 2 / span 4;
+}
+
+.list-kelas_kanan {
+    flex-direction: column;
+    align-items: center;
+    grid-row: 2 / span 4;
+}
+
+.list-kelas_Bawah {
+    justify-content: center;
+    grid-column: 2 / span 3;
+}
+
+.list-kelas_atas a, .list-kelas_kiri a, .list-kelas_kanan a, .list-kelas_Bawah a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #EEEEEE;
+    padding: 20px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    width: 100px; /* Adjust the width as needed */
+}
+
+.list-kelas_atas a:hover, .list-kelas_kiri a:hover, .list-kelas_kanan a:hover, .list-kelas_Bawah a:hover {
+    background-color: #D32F2F;
+    color: white;
 }
