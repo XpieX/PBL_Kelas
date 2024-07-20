@@ -95,16 +95,20 @@ h1 {
     background-color: black;
 }
 .kelas{
+    justify-content: center;
+    padding-left: 200px;
     list-style: none;
     display: flex;
     margin: 0;
     padding: 0;
+    z-index: 0,3;
 }
 .kelas-list{
-    align-items: center;
+
     padding: 20px 30px;
     border-radius: 5%;
     border: solid 1px black;
+    z-index: 0,3;
 }
 .kelas-list:hover{
     background-color: #D32F2F;
