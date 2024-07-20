@@ -81,6 +81,7 @@ h1 {
     margin: 0;
 }
 
+/* Mengatur nav */
 .Nav-list{
     padding: 3rem;
 }
@@ -90,7 +91,7 @@ h1 {
 }
 
 .Nav-list a.active{
-    
+    padding: 3em;
     background-color: rgb(161, 23, 23) ;
 }
 /* Mengatur list kelas-kelas */
