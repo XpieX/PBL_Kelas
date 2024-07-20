@@ -86,5 +86,28 @@ h1 {
 }
 
 .Nav-list:hover{
-    background-color: blue;
+    background-color: rgb(161, 23, 23);
+}
+
+.Nav-list a.active{
+    
+    background-color: rgb(161, 23, 23) ;
+}
+/* Mengatur list kelas-kelas */
+.kelas{
+    /* border: solid 1px black; */
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.kelas-list{
+    padding: 20px 30px;
+    border-radius: 5%;
+    border: solid 1px black;
+}
+
+.kelas-list:hover{
+    background-color: #D32F2F;
 }
