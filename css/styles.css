@@ -29,7 +29,7 @@ nav ul {
     display: flex;
 }
 
-nav li{
+nav li {
     margin: 0 15px;
 }
 
@@ -43,7 +43,7 @@ nav a {
     text-align: right;
 }
 
-.date, .time {
+.date,.time {
     display: block;
 }
 
@@ -60,7 +60,7 @@ main {
     margin: 0 auto;
 }
 
-.left-column, .right-column {
+.left-column,.right-column {
     background-color: white;
     padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,12 +68,12 @@ main {
     text-align: center;
 }
 
-.left-column a, .right-column a {
+.left-column a,.right-column a {
     color: black;
     text-decoration: none;
 }
 
-.left-column a:hover, .right-column a:hover {
+.left-column a:hover,.right-column a:hover {
     text-decoration: underline;
 }
 
@@ -82,7 +82,7 @@ h1 {
 }
 
 /* Classroom List Styles */
-.list-kelas_atas, .list-kelas_kiri, .list-kelas_kanan, .list-kelas_Bawah {
+.list-kelas_atas,.list-kelas_kiri,.list-kelas_kanan,.list-kelas_Bawah {
     display: flex;
     gap: 10px;
     margin: 10px 0;
@@ -90,27 +90,23 @@ h1 {
 
 .list-kelas_atas {
     justify-content: center;
-    grid-column: 2 / span 3;
 }
 
 .list-kelas_kiri {
     flex-direction: column;
     align-items: center;
-    grid-row: 2 / span 4;
 }
 
 .list-kelas_kanan {
     flex-direction: column;
     align-items: center;
-    grid-row: 2 / span 4;
 }
 
 .list-kelas_Bawah {
     justify-content: center;
-    grid-column: 2 / span 3;
 }
 
-.list-kelas_atas a, .list-kelas_kiri a, .list-kelas_kanan a, .list-kelas_Bawah a {
+.list-kelas_atas a,.list-kelas_kiri a,.list-kelas_kanan a,.list-kelas_Bawah a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,7 +121,26 @@ h1 {
     width: 100px; /* Adjust the width as needed */
 }
 
-.list-kelas_atas a:hover, .list-kelas_kiri a:hover, .list-kelas_kanan a:hover, .list-kelas_Bawah a:hover {
+.list-kelas_atas a:hover,.list-kelas_kiri a:hover,.list-kelas_kanan a:hover,.list-kelas_Bawah a:hover {
     background-color: #D32F2F;
     color: white;
+}
+
+/* Grid Container Styles */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr; /* adjust the column widths as needed */
+    gap: 10px;
+}
+
+.list-kelas_kiri {
+    grid-column: 1;
+}
+
+.taman-container {
+    grid-column: 2;
+}
+
+.list-kelas_kanan {
+    grid-column: 3;
 }
