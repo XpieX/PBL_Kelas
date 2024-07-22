@@ -1,5 +1,6 @@
-
 body {
+    background-color: #F5F5F5;
+    
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -29,10 +30,6 @@ nav ul {
     display: flex;
 }
 
-nav li {
-    /* margin: 15px; */
-}
-
 nav a {
     color: white;
     text-decoration: none;
@@ -48,6 +45,8 @@ nav a {
 }
 
 main {
+    align-items: center;
+    display: flex;
     background-color: #F5F5F5;
     padding: 20px 0;
 }
@@ -90,24 +89,40 @@ h1 {
     background-color: rgb(161, 23, 23);
 }
 
-.Nav-list a.active{
+.active{
     color: #000000;
 }
-/* Mengatur list kelas-kelas */
-.kelas{
-    /* border: solid 1px black; */
-    justify-content: center;
-    list-style: none;
-    display: flex;
-    padding: 0;
+
+.Welcome{
+    /* border: solid black 1px;s */
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-left:5%;
+    margin-right:50%;
+}
+.Welcome p{
+    line-height: 1.5em;
+}
+.Welcome img{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    left: 800px;
+    top: 200px;
 }
 
-.kelas-list{
-    padding: 20px 30px;
-    border-radius: 5%;
-    border: solid 1px black;
+footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #D32F2F;
+}
+.isi p{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: yellow;
 }
 
-.kelas-list:hover{
-    background-color: #D32F2F;
-}
+
