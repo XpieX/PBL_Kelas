@@ -52,51 +52,62 @@ main {
     padding: 20px 0;
 }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    gap: 20px;
+.content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
     width: 90%;
     margin: 0 auto;
-    grid-template-rows: auto auto auto;
+}
+
+.left-column, .right-column {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    text-align: center;
+}
+
+.left-column a, .right-column a {
+    color: black;
+    text-decoration: none;
+}
+
+.left-column a:hover, .right-column a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    margin: 0;
+}
+
+/* Classroom List Styles */
+.list-kelas_atas, .list-kelas_kiri, .list-kelas_kanan, .list-kelas_Bawah {
+    display: flex;
+    gap: 10px;
+    margin: 10px 0;
 }
 
 .list-kelas_atas {
-    grid-column: 1 / span 3;
-    display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    grid-column: 2 / span 3;
 }
 
 .list-kelas_kiri {
-    grid-column: 1;
-    display: flex;
     flex-direction: column;
-    gap: 10px;
-}
-
-.taman-container {
-    grid-column: 2;
-    display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-.taman {
-    max-width: 50%;
+    grid-row: 2 / span 4;
 }
 
 .list-kelas_kanan {
-    grid-column: 3;
-    display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    grid-row: 2 / span 4;
 }
 
 .list-kelas_Bawah {
-    grid-column: 1 / span 3;
-    display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    justify-content: center;
+    grid-column: 2 / span 3;
 }
 
 .list-kelas_atas a, .list-kelas_kiri a, .list-kelas_kanan a, .list-kelas_Bawah a {
@@ -111,7 +122,7 @@ main {
     text-align: center;
     border: 1px solid #CCCCCC;
     border-radius: 5px;
-    width: 100px;
+    width: 100px; /* Adjust the width as needed */
 }
 
 .list-kelas_atas a:hover, .list-kelas_kiri a:hover, .list-kelas_kanan a:hover, .list-kelas_Bawah a:hover {
