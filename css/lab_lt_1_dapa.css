@@ -1,0 +1,157 @@
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #D32F2F;
+    color: white;
+    padding: 0px 20px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.logo {
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.datetime {
+    text-align: right;
+}
+
+.date, .time {
+    display: block;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #F5F5F5;
+    padding: 20px 0;
+}
+
+.container {
+    position: relative;
+    width: 800px;
+    height: 400px;
+    background-color: #8B0000; /* Dark red background */
+}
+
+.ruang-dosen {
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 400px;
+    height: 100px;
+    background-color: #D3D3D3; /* Light gray background */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ruang-dosen2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 200px;
+    background-color: #ADD8E6;
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    writing-mode: vertical-rl;
+    text-align: center;
+}
+
+.lab-ti14 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #D3D3D3; /* Light gray background */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ruang-kepala-lab {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #D3D3D3; /* Light gray background */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.toilet {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #D3D3D3; /* Light gray background */
+    border: 2px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+}
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #D32F2F;
+}
+
+.isi p {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: yellow;
+}
+
+/* Navigation Styles */
+.Nav-list {
+    padding: 3rem;
+}
+
+.Nav-list:hover {
+    background-color: rgb(161, 23, 23);
+}
+
+.active {
+    color: #000000;
+}
