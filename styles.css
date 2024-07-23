@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: gray;
+}
+
+.container {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    background: #f9eaea;
+    border-radius: 20px;
+    box-shadow: 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container a{
+    text-decoration: none;
+    color: inherit  ;
+}
+
+.left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login {
+    width: 50%;
+}
+
+form {
+    width: 250px;
+    margin: 60px auto;
+}
+
+h1 {
+    margin: 25px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+hr {
+    border-top: 2px solid #000000;
+}
+
+p {
+    text-align: center;
+    margin: 10px;
+}
+
+.left img {
+    max-width: 70%; /* Menyesuaikan ukuran gambar */
+    height: auto;
+    border-radius: 15px;
+    margin-left: 60px;
+}
+
+form label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+input {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    padding: 13px;
+    border-radius: 20px;
+    border: 1px solid gray;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 25px;
+    border-radius: 20px;
+    background: gray;
+}
+
+button:hover {
+    background: rgba(214, 86, 64, 1);
+}
+
+@media (max-width: 880px) {
+    .container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+        flex-direction: column;
+    }
+
+    form {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .login {
+        width: 100%;
+        padding: 20px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .left img {
+        width: 70%; /* Menyesuaikan ukuran gambar */
+        height: auto;
+        margin-left: 0px;
+    }
+}
