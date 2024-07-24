@@ -91,7 +91,7 @@ h1 {
     color: #000000;
 }
 
-footer{
+footer {
     position: fixed;
     left: 0;
     bottom: 0;
@@ -99,12 +99,13 @@ footer{
     background: #D32F2F;
 }
 
-.isi p{
+.isi p {
     font-size: 20px;
     margin-left: 5%;
     margin-right: 5%;
     color: yellow;
 }
+
 .Ruangan {
     font-size: 1.25rem;
     font-weight: bold;
@@ -151,7 +152,7 @@ footer{
     right: 75%;
     top: 72%;
     width: 30vh;
-    height:19vh;
+    height: 19vh;
 }
 
 @media (max-width: 1200px) {
@@ -176,9 +177,46 @@ footer{
     }
 }
 
-.Gedung:hover{
+.Gedung:hover {
     text-decoration: underline rgb(161, 23, 23);
 }
-.Lab{
+
+.dropbtn {
     text-decoration: underline rgb(161, 23, 23);
+}
+
+/* Dropdown CSS */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
 }

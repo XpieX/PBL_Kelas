@@ -7,7 +7,7 @@ body {
 header {
     background-color: #D32F2F;
     color: white;
-    padding: 0 2%;
+    padding: 0 20px;
 }
 
 .header-content {
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    height: 8vh;
+    height: 100px;
 }
 
 nav ul {
@@ -33,7 +33,6 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 1rem;
 }
 
 .datetime {
@@ -45,16 +44,14 @@ nav a {
 }
 
 main {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     background-color: #F5F5F5;
-    padding: 2% 0;
+    padding: 10px 0;
 }
 
 .content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 90%;
@@ -63,11 +60,10 @@ main {
 
 .left-column, .right-column {
     background-color: white;
-    padding: 2%;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 45%;
     text-align: center;
-    margin: 1% 0;
 }
 
 .left-column a, .right-column a {
@@ -84,7 +80,7 @@ h1 {
 }
 
 .Nav-list {
-    padding: 1.5rem;
+    padding: 3rem;
 }
 
 .Nav-list:hover {
@@ -104,8 +100,9 @@ footer {
 }
 
 .isi p {
-    font-size: 1.25rem;
-    margin: 0 5%;
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     color: yellow;
 }
 
@@ -122,19 +119,19 @@ footer {
 
 .Ruangan_kelas_11 {
     right: 70%;
-    top: 28%;
+    top: 29%;
     padding: 10vh 4vw;
 }
 
 .Ruangan_kelas_12 {
     right: 34%;
-    top: 28%;
+    top: 29%;
     padding: 10vh 8vw;
 }
 
 .Ruangan_kelas_13 {
     right: 10%;
-    top: 28%;
+    top: 29%;
     padding: 10vh 2vw;
 }
 
@@ -172,4 +169,47 @@ footer {
         width: 15vh;
         height: 15vh;
     }
+}
+
+.Gedung:hover {
+    text-decoration: underline rgb(161, 23, 23);
+}
+
+.dropbtn {
+    text-decoration: underline rgb(161, 23, 23);
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 32px;
+    background-color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.show {
+    display: block;
 }
