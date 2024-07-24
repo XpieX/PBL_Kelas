@@ -114,8 +114,8 @@ footer{
 
 .Ruangan_Dosen{
     position: absolute;
-    right: 1000px;
-    top: 200px;
+    right: 76%;
+    top: 29%;
     padding: 80px 10px;
     background-color: #D9D9D9;
     border: solid 2px black;
@@ -123,8 +123,8 @@ footer{
 
 .Ruangan_Dosen_2 {
     position: absolute;
-    right: 444px;
-    top: 200px;
+    right: 34%;
+    top: 29%;
     padding: 80px 120px;
     background-color: #D9D9D9;
     border: solid 2px black;
@@ -132,8 +132,8 @@ footer{
 
 .Ruangan_LabTI {
     position: absolute;
-    right: 120px;
-    top: 200px;
+    right: 10%;
+    top: 29%;
     padding: 70px 7px;
     background-color: #D9D9D9;
     border: solid 2px black;
@@ -141,8 +141,8 @@ footer{
 
 .Ruangan_Kepala_Lab {
     position: absolute;
-    right: 100px;
-    top: 400px;
+    right: 10%;
+    top: 58%;
     padding: 70px 7px;
     background-color: #D9D9D9;
     border: solid 2px black; 
@@ -150,8 +150,8 @@ footer{
 
 .Toilet {
     position: absolute;
-    right: 1000px;
-    top: 400px;
+    right: 76%;
+    top: 58%;
     padding: 37px 59px;
     background-color: #D9D9D9;
     border: solid 2px black; 
