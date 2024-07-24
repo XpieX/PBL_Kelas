@@ -201,7 +201,11 @@ footer {
     cursor: pointer;
 }
 
+.dropdown-content:hover{
+    text-decoration: none;
+}
 .dropdown-content {
+    font-weight: bold;
     display: none;
     position: absolute;
     background-color: #f9f9f9;
