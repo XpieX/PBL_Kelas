@@ -146,16 +146,16 @@ footer {
 
 .Toilet {
     right: 73%;
-    top: 58%;
+    top: 56%;
     padding: 5vh 6vw;
 }
 
 .Ruangan img {
     position: fixed;
-    right: 80%;
-    top: 77%;
-    width: 13vh;
-    height:15vh;
+    right: 75%;
+    top: 72%;
+    width: 30vh;
+    height:19vh;
 }
 
 @media (max-width: 1200px) {
