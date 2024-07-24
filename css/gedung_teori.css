@@ -1,6 +1,5 @@
 body {
     background-color: #F5F5F5;
-    
     margin: 0;
     font-family: Arial, sans-serif;
 }
@@ -48,7 +47,7 @@ main {
     align-items: center;
     display: flex;
     background-color: #F5F5F5;
-    padding: 20px 0;
+    padding: 10px 0;
 }
 
 .content {
@@ -99,6 +98,13 @@ footer{
     bottom: 0;
     width: 100%;
     background: #D32F2F;
+}
+
+.isi p{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
+    color: yellow;
 }
 /* Classroom List Styles */
 .list-kelas_atas,.list-kelas_kiri,.list-kelas_kanan,.list-kelas_Bawah {

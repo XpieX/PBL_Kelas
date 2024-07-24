@@ -7,7 +7,7 @@ body {
 header {
     background-color: #D32F2F;
     color: white;
-    padding: 0 2%;
+    padding: 0 20px;
 }
 
 .header-content {
@@ -19,7 +19,7 @@ header {
 }
 
 .logo {
-    height: 8vh;
+    height: 100px;
 }
 
 nav ul {
@@ -33,7 +33,6 @@ nav a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    margin-left: 1rem;
 }
 
 .datetime {
@@ -45,16 +44,14 @@ nav a {
 }
 
 main {
-    display: flex;
-    justify-content: center;
     align-items: center;
+    display: flex;
     background-color: #F5F5F5;
-    padding: 2% 0;
+    padding: 10px 0;
 }
 
 .content {
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     width: 90%;
@@ -63,11 +60,10 @@ main {
 
 .left-column, .right-column {
     background-color: white;
-    padding: 2%;
+    padding: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 45%;
     text-align: center;
-    margin: 1% 0;
 }
 
 .left-column a, .right-column a {
@@ -84,7 +80,7 @@ h1 {
 }
 
 .Nav-list {
-    padding: 1.5rem;
+    padding: 3rem;
 }
 
 .Nav-list:hover {
@@ -95,7 +91,7 @@ h1 {
     color: #000000;
 }
 
-footer {
+footer{
     position: fixed;
     left: 0;
     bottom: 0;
@@ -103,12 +99,12 @@ footer {
     background: #D32F2F;
 }
 
-.isi p {
-    font-size: 1.25rem;
-    margin: 0 5%;
+.isi p{
+    font-size: 20px;
+    margin-left: 5%;
+    margin-right: 5%;
     color: yellow;
 }
-
 .Ruangan {
     font-size: 1.25rem;
     font-weight: bold;
@@ -178,4 +174,11 @@ footer {
         width: 15vh;
         height: 15vh;
     }
+}
+
+.Gedung:hover{
+    text-decoration: underline rgb(161, 23, 23);
+}
+.Lab{
+    text-decoration: underline rgb(161, 23, 23);
 }
