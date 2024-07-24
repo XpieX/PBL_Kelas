@@ -100,14 +100,38 @@ footer{
     width: 100%;
     background: #D32F2F;
 }
-
 /* Classroom List Styles */
 .list-kelas_atas,.list-kelas_kiri,.list-kelas_kanan,.list-kelas_Bawah {
     display: flex;
     gap: 10px;
-    margin: 10px 0;
+    margin: 10px ;
 }
 
+.list-kelas_kiri{
+    margin-left: 98%;
+}
+
+.list-kelas_kanan{
+    margin-right: 98%;
+}
+.taman-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* Tambahkan ini jika Anda ingin container mengambil seluruh tinggi yang tersedia */
+}
+
+.taman {
+    max-width: 50%;
+    height: auto;
+}
+
+.Gedung{
+    text-decoration: underline rgb(161, 23, 23);
+}
+.Lab:hover{
+    text-decoration: underline rgb(161, 23, 23);
+}
 .list-kelas_atas {
     justify-content: center;
 }
@@ -131,7 +155,7 @@ footer{
     justify-content: center;
     align-items: center;
     background-color: #EEEEEE;
-    padding: 20px;
+    padding: 10px;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -150,7 +174,8 @@ footer{
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* adjust the column widths as needed */
-    gap: 10px;
+
+    margin-bottom: 0%;
 }
 
 .list-kelas_kiri {
