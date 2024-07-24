@@ -121,41 +121,41 @@ footer {
 }
 
 .Ruangan_Dosen {
-    right: 76%;
+    right: 70%;
     top: 29%;
-    padding: 5vh 1vw;
+    padding: 10vh 4vw;
 }
 
 .Ruangan_Dosen_2 {
     right: 34%;
     top: 29%;
-    padding: 5vh 8vw;
+    padding: 10vh 8vw;
 }
 
 .Ruangan_LabTI {
     right: 10%;
     top: 29%;
-    padding: 4vh 1vw;
+    padding: 10vh 2vw;
 }
 
 .Ruangan_Kepala_Lab {
     right: 10%;
     top: 58%;
-    padding: 4vh 1vw;
+    padding: 8vh 1vw;
 }
 
 .Toilet {
-    right: 76%;
+    right: 73%;
     top: 58%;
-    padding: 2vh 3vw;
+    padding: 5vh 6vw;
 }
 
 .Ruangan img {
     position: fixed;
-    right: 60%;
-    top: 65%;
-    width: 8vh;
-    height: 8vh;
+    right: 80%;
+    top: 77%;
+    width: 13vh;
+    height:15vh;
 }
 
 @media (max-width: 1200px) {
