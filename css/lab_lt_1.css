@@ -181,7 +181,7 @@ footer {
     text-decoration: underline rgb(161, 23, 23);
 }
 
-.dropbtn {
+button{
     text-decoration: underline rgb(161, 23, 23);
 }
 
@@ -198,10 +198,18 @@ footer {
     font-size: 32px;
     background-color: #ffffff;
     border: none;
+    text-decoration: none;
     cursor: pointer;
 }
 
-.dropdown-content:hover{
+.lantai_1{
+    color: #D32F2F;
+}
+.Lantai_1:hover, .Lantai_2:hover{
+    color: #D32F2F;
+}
+
+.dropdown-content a{
     text-decoration: none;
 }
 .dropdown-content {
