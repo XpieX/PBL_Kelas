@@ -84,6 +84,7 @@ h1 {
 }
 
 .Nav-list:hover {
+    transition: 0.3s;
     background-color: rgb(161, 23, 23);
 }
 
