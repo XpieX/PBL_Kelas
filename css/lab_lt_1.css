@@ -224,3 +224,16 @@ footer {
 .show {
     display: block;
 }
+
+body{
+    animation: page 0.3s;
+}
+@keyframes page {
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
+}
