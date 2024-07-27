@@ -43,11 +43,18 @@
                 </a>
             </div>
             <div class="Ruangan">
-                <p class="Ruangan_kelas_11">RUANG LAB TI 11</p>
+                <p class="Ruangan_kelas_11 " onclick="openModal('modalRuangan11')">RUANG LAB TI 11</p>
                 <p class ="Ruangan_kelas_12">RUANG LAB TI 12</p>
                 <p class ="Ruangan_kelas_13">RUANG LAB TI 13</p>
                 <p class="Ruangan_server_teknisi">RUANG SERVER DAN TEKNISI</p>
                 <img src="tangga-removebg-preview.png" alt="gambar tangga">
+            </div>
+            <div id="modalRuangan11" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal('modalRuangan11')">&times;</span>
+                    <h2>RUANG LAB TI 11</h2>
+                    <p>Informasi detail tentang RUANG LAB TI 11.</p>
+                </div>
             </div>
         </div>
     </main>
