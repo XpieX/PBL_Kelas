@@ -84,6 +84,7 @@ h1 {
 }
 
 .Nav-list:hover {
+    transition: 0.3s;
     background-color: rgb(161, 23, 23);
 }
 
@@ -246,4 +247,17 @@ footer {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+body{
+    animation: page 0.3s;
+}
+@keyframes page {
+    from{
+        opacity: 0;
+    }
+    
+    to{
+        opacity: 1;
+    }
 }
