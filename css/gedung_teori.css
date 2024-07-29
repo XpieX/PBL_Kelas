@@ -176,6 +176,19 @@ footer{
     background-color: #D32F2F;
     color: white;
 }
+.disabled {
+    pointer-events: none;
+    cursor: default;
+    color: gray;
+    background-color: #CCCCCC;
+    border: 1px solid #AAAAAA;
+}
+
+.disabled:hover {
+    background-color: #CCCCCC;
+    color: gray;
+}
+
 
 /* Grid Container Styles */
 .grid-container {
