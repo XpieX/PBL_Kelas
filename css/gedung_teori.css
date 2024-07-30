@@ -197,7 +197,7 @@ footer{
     grid-column: 3;
 }
 
-body{
+.content{
     animation: page 0.3s;
 }
 @keyframes page {

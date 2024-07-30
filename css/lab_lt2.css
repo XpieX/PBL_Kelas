@@ -89,6 +89,7 @@ h1 {
 }
 
 .active {
+    
     color: #000000;
 }
 
@@ -155,14 +156,14 @@ footer {
         width: 100%;
         margin: 1% 0;
     }
-
+    
     .Ruangan_kelas_11, .Ruangan_kelas_12, .Ruangan_kelas_13, .Ruangan_server_teknisi {
         position: static;
         margin: 1% 0;
         width: auto;
         padding: 2vh 2vw;
     }
-
+    
     .Ruangan img {
         position: static;
         display: block;
@@ -227,14 +228,64 @@ footer {
     overflow: auto; 
     background-color: rgb(0,0,0); 
     background-color: rgba(0,0,0,0.4); 
-    padding-top: 60px;
+    padding-top: 10%;
 }
-.modal-content {
-    background-color: #fefefe;
-    margin: 5% auto; 
+.modal-list{
+    color: #f9f9f9;
+    background-color: #D32F2F;
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    padding: 2%;
+    margin: 0px 1px;
+    width: 100%;
+    height: auto;
+    border: solid 1px black;
+}
+
+.modal-list:hover{
+    background-color: rgb(161, 23, 23);
+    transition: 0.2s;
+}
+
+.modal_nav{
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    height: auto;
+}
+
+.modal-header{
+    color: #F5F5F5;
+    text-align: center;
+    position: relative;
+    margin: 0% auto; 
     padding: 20px;
     border: 1px solid #888;
-    width: 80%; 
+    width: 40%; 
+    height: auto;
+    background-color: #D32F2F;
+}
+
+.modal_nav a{
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+.modal-content {
+    background-color: #F5F5F5;
+    text-align: center;
+    position: relative;
+    margin: 0% auto; 
+    padding: 0px 20px;
+    border: 1px solid #888;
+    width: 40%; 
+    height: 50%;
+    animation-name: Animasi_modal;
+    animation-duration: 0.5s;
+    overflow: scroll;
 }
 .close {
     color: #aaa;
@@ -249,7 +300,7 @@ footer {
     cursor: pointer;
 }
 
-body{
+.content{
     animation: page 0.3s;
 }
 @keyframes page {
@@ -259,5 +310,15 @@ body{
     
     to{
         opacity: 1;
+    }
+}
+
+@keyframes Animasi_modal {
+    from {
+    opacity: 0;
+    transform: translateY(-6%);
+}
+to {opacity: 1;
+    transform: translateY(0);
     }
 }

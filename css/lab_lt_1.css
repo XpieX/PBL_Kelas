@@ -226,7 +226,7 @@ footer {
     display: block;
 }
 
-body{
+.content{
     animation: page 0.3s;
 }
 @keyframes page {
