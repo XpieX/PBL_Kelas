@@ -179,6 +179,7 @@ footer {
 }
 
 .Gedung:hover {
+    transition: 0.3s;
     text-decoration: underline rgb(161, 23, 23);
 }
 
@@ -199,7 +200,7 @@ button{
     font-size: 32px;
     background-color: #ffffff;
     border: none;
-    text-decoration: none;
+    text-decoration: underline rgb(161, 23, 23);
     cursor: pointer;
 }
 

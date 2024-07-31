@@ -137,6 +137,7 @@ footer{
     text-decoration: underline rgb(161, 23, 23);
 }
 .Lab:hover{
+    transition: 0.3s;
     text-decoration: underline rgb(161, 23, 23);
 }
 .list-kelas_atas {

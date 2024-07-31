@@ -174,10 +174,7 @@ footer {
 }
 
 .Gedung:hover {
-    text-decoration: underline rgb(161, 23, 23);
-}
-
-.dropbtn {
+    transition: 0.3s;
     text-decoration: underline rgb(161, 23, 23);
 }
 
@@ -192,6 +189,7 @@ footer {
     color: rgb(0, 0, 0);
     font-size: 32px;
     background-color: #ffffff;
+    text-decoration: underline rgb(161, 23, 23);
     border: none;
     cursor: pointer;
 }
@@ -216,6 +214,14 @@ footer {
 .show {
     display: block;
 }
+
+.lantai_1{
+    color: #D32F2F;
+}
+.Lantai_1:hover, .Lantai_2:hover{
+    color: #D32F2F;
+}
+
 
 .modal {
     display: none; 
@@ -286,6 +292,8 @@ footer {
     animation-name: Animasi_modal;
     animation-duration: 0.5s;
     overflow: scroll;
+    font-size: 18px;
+    font-family: Arial, sans-serif;
 }
 .close {
     color: #aaa;

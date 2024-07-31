@@ -10,7 +10,7 @@
     <script src="js/script.js"></script>
     <header>
         <div class="header-content">
-            <img src="Logo Elektro Asli.png" alt="Logo" class="logo">
+            <img src="images/Logo Elektro Asli.png" alt="Logo" class="logo">
             <nav>
                 <ul class="Nav">
                     <li class="Nav-list"><a href="Homepage.html">Beranda</a></li>
@@ -20,6 +20,7 @@
             </nav>
             <div class="datetime">
                 <span id="date" class="date"></span>
+                <br>
                 <span id="time" class="time"></span>
             </div>
         </div>
@@ -29,14 +30,15 @@
             <div class="left-column">
                 <a href="gedung_teori.html">
                     <h1 class="Gedung">GEDUNG TEORI</h1>
+                    
                 </a>
             </div>
             <div class="right-column">
                 <div class="dropdown">
                         <button onclick="toggleDropdown()" class="dropbtn">LAB TI</button>
                         <div id="myDropdown" class="dropdown-content">
-                            <a href="lab_lt_1.html">Lantai 1</a>
-                            <a href="#">Lantai 2</a>
+                            <a href="lab_lt_1.html" class="Lantai_1">Lantai 1</a>
+                            <a href="#" class="Lantai_2">Lantai 2</a>
                         </div>
                         </div>
                     </div>
@@ -44,10 +46,10 @@
             </div>
             <div class="Ruangan">
                 <p class="Ruangan_kelas_11 " onclick="openModal('modalRuangan11')">RUANG LAB TI 11</p>
-                <p class ="Ruangan_kelas_12">RUANG LAB TI 12</p>
+                <p class ="Ruangan_kelas_12" onclick="openModal('modalRuangan12')">RUANG LAB TI 12</p>
                 <p class ="Ruangan_kelas_13">RUANG LAB TI 13</p>
                 <p class="Ruangan_server_teknisi">RUANG SERVER DAN TEKNISI</p>
-                <img src="tangga-removebg-preview.png" alt="gambar tangga">
+                <img src="images/tangga-removebg-preview.png" alt="gambar tangga">
             </div>
 
             <div id="modalRuangan11" class="modal">
@@ -56,15 +58,19 @@
                     <h1>Ruangan TI 11</h1>
                 </div>
                 <div class="modal-content">
-                    <ul class="modal_nav">
-                        <li class="modal-list"><a href="#">BERANDA</a></li>
-                        <li class="modal-list"><a href="#">FASILITAS</a></li>
-                        <li class="modal-list"><a href="#">JADWAL</a></li>
-                    </ul>
-                    <p>Informasi detail tentang RUANG LAB TI 11.</p>
+                    <p id="modalTextRuangan11">Informasi detail tentang RUANG LAB TI 11.</p>
                 </div>
             </div>
+            <div id="modalRuangan12" class="modal">
+                <div class="modal-header">
+                    <span class="close" onclick="closeModal('modalRuangan12')">&times;</span>
+                    <h1>Ruangan TI 12</h1>
+                </div>
+                <div class="modal-content">
+                    <p id="modalTextRuangan12">Informasi detail tentang RUANG LAB TI 12.</p>
+                </div>
 
+            </div>
         </div>
     </main>
     <footer>
