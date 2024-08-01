@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Login</title>
-    <link rel="stylesheet" href="css/login.css">
-    <script src="js/login_script.js" defer></script>    
+    <link rel="stylesheet" href="css/login.css">   
 </head>
 <body>
     <div class="container">
@@ -13,22 +12,23 @@
             <img src="images/Logo Elektro Asli.png" alt="logo">
         </div>
         <div class="login">
-            <form action="" method="post">
+            <form onsubmit="loginForm()">
                 <h1>Login</h1>
+                <p id="result"></p>
                 <hr>
-                <!-- <label for="nim">NIM</label> -->
-                <input type="text" id="nim" name="nim"placeholder="NIM">
-                <!-- <label for="password">Password</label> -->
+                <input type="text" id="nim" name="nim" placeholder="NIM">
                 <input type="password" id="password" name="password" placeholder="Password">
-                <button id="loginButton" type="button">Login</button>
+                <button id="loginButton"type="submit">Login</button>
                 <p>
-                    <a href="register.html" >Daftar Akun</a> 
+                    <a href="register.html">Daftar Akun</a> 
                 </p>
                 <p>
-                    <a href="reset.html" >Lupa Password?</a>
+                    <a href="reset.html">Lupa Password?</a>
                 </p>
             </form>
         </div>
     </div>
+    <script src="./scriptlogin.js"></script>
 </body>
 </html>
+                                                        
