@@ -32,7 +32,7 @@ function loginForm(e){
     if(user == null){
         result.innerHTML = 'Akun tidak terdaftar';
     }else if(nim == data.nim && password == data.password){
-        window.location.href = 'register.html';
+        window.location.href = 'homepage.html';
     }else{
         result.innerHTML = 'Password anda salah!';  
     }
