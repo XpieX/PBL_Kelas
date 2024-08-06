@@ -1,23 +1,37 @@
 function updateDateTime() {
-    const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
-    const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
+  const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
+  const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 
-    const now = new Date();
-    const dayName = days[now.getDay()];
-    const day = now.getDate();
-    const month = months[now.getMonth()];
-    const year = now.getFullYear();
-    const hours = now.getHours().toString().padStart(2, '0');
-    const minutes = now.getMinutes().toString().padStart(2, '0');
-    const seconds = now.getSeconds().toString().padStart(2, '0');
+  const now = new Date();
+  const dayName = days[now.getDay()];
+  const day = now.getDate();
+  const month = months[now.getMonth()];
+  const year = now.getFullYear();
+  const hours = now.getHours().toString().padStart(2, '0');
+  const minutes = now.getMinutes().toString().padStart(2, '0');
+  const seconds = now.getSeconds().toString().padStart(2, '0');
 
-    const dateString = `${dayName}, ${day} ${month} ${year}`;
-    const timeString = `${hours}:${minutes}:${seconds}`;
+  const dateString = `${dayName}, ${day} ${month} ${year}`;
+  const timeString = `${hours}:${minutes}:${seconds}`;
 
-    document.getElementById('date').textContent = dateString;
-    document.getElementById('time').textContent = timeString;
+  document.getElementById('date').textContent = dateString;
+  document.getElementById('time').textContent = timeString;
 
-    setTimeout(updateDateTime, 1000);
+  // Menambahkan logika untuk background color
+  const ruangKelas11 = document.querySelector('.Ruangan_kelas_11');
+  const currentHour = now.getHours();
+  const currentMinute = now.getMinutes();
+  if (currentHour > 13 || (currentHour === 13 && currentMinute >= 10)) {
+      if (currentHour < 15) {
+          ruangKelas11.classList.add('highlight-red');
+      } else {
+          ruangKelas11.classList.remove('highlight-red');
+      }
+  } else {
+      ruangKelas11.classList.remove('highlight-red');
+  }
+
+  setTimeout(updateDateTime, 1000);
 }
 
 function toggleDropdown() {
