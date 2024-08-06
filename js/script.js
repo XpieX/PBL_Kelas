@@ -59,3 +59,36 @@ function updateDateTime() {
 }
 
 updateDateTime();
+
+function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Tutup dropdown jika pengguna mengklik di luar dropdown
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+          }
+      }
+  }
+}
+
+
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+  }
+}
