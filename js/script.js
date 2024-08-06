@@ -8,6 +8,7 @@ function updateDateTime() {
     // Add more schedules as needed
   ];
 
+  
   const now = new Date();
   const dayName = days[now.getDay()];
   const day = now.getDate();
