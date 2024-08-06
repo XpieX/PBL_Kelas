@@ -3,7 +3,7 @@ function updateDateTime() {
   const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 
   const schedule = [
-    { className: 'Ruangan_kelas_11', day: 1, times: [['08:00', '10:00'], ['15:00', '16:00']] }, // Senin
+    { className: 'Ruangan_kelas_11', day: 2, times: [['08:00', '10:00'], ['15:00', '16:00']] }, // Senin
     { className: 'Ruangan_kelas_12', day: 3, times: [['12:00', '13:00'], ['15:00', '16:00']] }, // Rabu
     // Add more schedules as needed
   ];
