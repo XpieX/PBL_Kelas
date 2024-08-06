@@ -2,6 +2,12 @@ function updateDateTime() {
   const days = ['Minggu', 'Senin', 'Selasa', 'Rabu', 'Kamis', 'Jumat', 'Sabtu'];
   const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 
+  const schedule = [
+    { day: 1, start: '08:00', end: '10:00' }, // Senin
+    { day: 3, start: '13:10', end: '15:00' }, // Rabu
+    // Add more schedules as needed
+  ];
+
   const now = new Date();
   const dayName = days[now.getDay()];
   const day = now.getDate();
@@ -17,22 +23,39 @@ function updateDateTime() {
   document.getElementById('date').textContent = dateString;
   document.getElementById('time').textContent = timeString;
 
-  // Menambahkan logika untuk background color
+  // Background color logic
   const ruangKelas11 = document.querySelector('.Ruangan_kelas_11');
-  const currentHour = now.getHours();
-  const currentMinute = now.getMinutes();
-  if (currentHour > 13 || (currentHour === 13 && currentMinute >= 10)) {
-      if (currentHour < 15) {
-          ruangKelas11.classList.add('highlight-red');
-      } else {
-          ruangKelas11.classList.remove('highlight-red');
+  let isScheduled = false;
+  const currentTime = now.getHours() * 60 + now.getMinutes(); // Current time in minutes
+
+  for (const event of schedule) {
+    if (event.day === now.getDay()) {
+      const startTime = event.start.split(':');
+      const endTime = event.end.split(':');
+      const startMinutes = parseInt(startTime[0]) * 60 + parseInt(startTime[1]);
+      const endMinutes = parseInt(endTime[0]) * 60 + parseInt(endTime[1]);
+
+      if (currentTime >= startMinutes && currentTime <= endMinutes) {
+        isScheduled = true;
+        break;
       }
+    }
+  }
+
+  if (isScheduled) {
+    ruangKelas11.classList.add('highlight-red');
+    ruangKelas11.classList.remove('highlight-green');
   } else {
-      ruangKelas11.classList.remove('highlight-red');
+    ruangKelas11.classList.add('highlight-green');
+    ruangKelas11.classList.remove('highlight-red');
   }
 
   setTimeout(updateDateTime, 1000);
 }
+
+updateDateTime();
+
+updateDateTime();
 
 function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");

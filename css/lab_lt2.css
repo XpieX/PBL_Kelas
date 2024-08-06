@@ -342,5 +342,13 @@ th, td {
     padding: 15px;
     text-align: left;
 }
-       
-    
+
+
+.highlight-red {
+    background-color: red;
+  }
+  
+  .highlight-green {
+    background-color: rgb(14, 238, 14);
+  }
+  
