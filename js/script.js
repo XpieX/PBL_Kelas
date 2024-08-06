@@ -8,6 +8,7 @@ function updateDateTime() {
     // Add more schedules as needed
   ];
 
+  
   const now = new Date();
   const dayName = days[now.getDay()];
   const day = now.getDate();
@@ -17,8 +18,8 @@ function updateDateTime() {
   const minutes = now.getMinutes().toString().padStart(2, '0');
   const seconds = now.getSeconds().toString().padStart(2, '0');
 
-  const dateString = `${dayName}, ${day} ${month} ${year}`;
-  const timeString = `${hours}:${minutes}:${seconds}`;
+  const dateString = ${dayName}, ${day} ${month} ${year};
+  const timeString = ${hours}:${minutes}:${seconds};
 
   document.getElementById('date').textContent = dateString;
   document.getElementById('time').textContent = timeString;
@@ -27,7 +28,7 @@ function updateDateTime() {
   const currentTime = now.getHours() * 60 + now.getMinutes(); // Current time in minutes
 
   schedule.forEach(({ className, day: scheduleDay, times }) => {
-    const ruangKelas = document.querySelector(`.${className}`);
+    const ruangKelas = document.querySelector(.${className});
     let isScheduled = false;
 
     if (scheduleDay === now.getDay()) {
@@ -59,3 +60,36 @@ function updateDateTime() {
 }
 
 updateDateTime();
+
+function toggleDropdown() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Tutup dropdown jika pengguna mengklik di luar dropdown
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+          }
+      }
+  }
+}
+
+
+
+function openModal(modalId) {
+  document.getElementById(modalId).style.display = "block";
+}
+
+function closeModal(modalId) {
+  document.getElementById(modalId).style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+  }
+}
