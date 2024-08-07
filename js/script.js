@@ -83,7 +83,7 @@ function updateDateTime() {
     { className: 'Ruangan_LabTI', day: 5, times: [['07:00', '16:20']]},
 
   ];
-
+ 
   const now = new Date();
   const dayName = days[now.getDay()];
   const day = now.getDate();
