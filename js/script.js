@@ -127,7 +127,7 @@ function updateDateTime() {
           ruangKelas.classList.add('highlight-green');
           ruangKelas.classList.remove('highlight-red');
         }
-    }
+      }
     }
 
     
