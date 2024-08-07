@@ -167,7 +167,7 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #EEEEEE;
+    /* background-color: #EEEEEE; */
     padding: 10px;
     text-decoration: none;
     color: black;
@@ -178,10 +178,6 @@ footer{
     width: 100px; /* Adjust the width as needed */
 }
 
-.list-kelas_atas a:hover,.list-kelas_kiri a:hover,.list-kelas_kanan a:hover,.list-kelas_Bawah a:hover {
-    background-color: #D32F2F;
-    color: white;
-}
 .disabled {
     pointer-events: none;
     cursor: default;

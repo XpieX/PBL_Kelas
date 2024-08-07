@@ -68,19 +68,19 @@ function updateDateTime() {
     { className: 'Ruangan_LabTI', day: 4, times: [['07:00', '15:50']]},
 
     // hari jum'at
-    // { className: 'Ruang_TI_1', day: 5, times: [['07:00', '16:20']]},
-    // { className: 'Ruang_TI_2', day: 5, times: [['10:35', '16:20']]},
-    // { className: 'Ruang_TI_3', day: 5, times: [['07:00', '16:20']]},
-    // { className: 'Ruang_TI_4', day: 5, times: [['07:00', '08:40']]},
-    // { className: 'Ruang_TI_5', day: 5, times: [['07:00', '08:40']]},
-    // { className: 'Ruang_TI_6', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
-    // { className: 'Ruang_TI_7', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
-    // { className: 'Ruang_TI_8', day: 5, times: [['07:00', '08:40'], ['08:40', '14:40']]},
-    // { className: 'Ruang_TI_9', day: 5, times: [['07:00', '11:25'], ['13:00', '14:40']]},
-    // { className: 'Ruangan_kelas_11', day: 5, times: []},
-    // { className: 'Ruangan_kelas_12', day: 5, times: [['07:00', '16:20']]}, 
-    // { className: 'Ruangan_kelas_13', day: 5, times: [['07:00', '16:20']]},
-    // { className: 'Ruangan_LabTI', day: 5, times: [['07:00', '16:20']]},
+    { className: 'Ruang_TI_1', day: 5, times: [['07:00', '16:20']]},
+    { className: 'Ruang_TI_2', day: 5, times: [['10:35', '16:20']]},
+    { className: 'Ruang_TI_3', day: 5, times: [['07:00', '16:20']]},
+    { className: 'Ruang_TI_4', day: 5, times: [['07:00', '08:40']]},
+    { className: 'Ruang_TI_5', day: 5, times: [['07:00', '08:40']]},
+    { className: 'Ruang_TI_6', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
+    { className: 'Ruang_TI_7', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
+    { className: 'Ruang_TI_8', day: 5, times: [['07:00', '08:40'], ['08:40', '14:40']]},
+    { className: 'Ruang_TI_9', day: 5, times: [['07:00', '11:25'], ['13:00', '14:40']]},
+    { className: 'Ruangan_kelas_11', day: 5, times: []},
+    { className: 'Ruangan_kelas_12', day: 5, times: [['07:00', '16:20']]}, 
+    { className: 'Ruangan_kelas_13', day: 5, times: [['07:00', '16:20']]},
+    { className: 'Ruangan_LabTI', day: 5, times: [['07:00', '16:20']]},
 
   ];
 
@@ -102,11 +102,11 @@ function updateDateTime() {
   // Background color logic
   const currentTime = now.getHours() * 60 + now.getMinutes(); // Current time in minutes
 
-  schedule.forEach(({ className, day: scheduleDay, times }) => {
+  schedule.forEach(({ className, day, times }) => {
     const ruangKelas = document.querySelector(`.${className}`);
     let isScheduled = false;
 
-    if (scheduleDay === now.getDay()) {
+    if (day === now.getDay()) {
       for (const [start, end] of times) {
         const [startHour, startMinute] = start.split(':').map(Number);
         const [endHour, endMinute] = end.split(':').map(Number);
@@ -118,17 +118,19 @@ function updateDateTime() {
           break; // Break if any of the time ranges match
         }
       }
-    }
 
-    if (ruangKelas) {
-      if (isScheduled) {
-        ruangKelas.classList.add('highlight-red');
-        ruangKelas.classList.remove('highlight-green');
-      } else {
-        ruangKelas.classList.add('highlight-green');
-        ruangKelas.classList.remove('highlight-red');
+      if (ruangKelas) {
+        if (isScheduled) {
+          ruangKelas.classList.add('highlight-red');
+          ruangKelas.classList.remove('highlight-green');
+        } else {
+          ruangKelas.classList.add('highlight-green');
+          ruangKelas.classList.remove('highlight-red');
+        }
       }
     }
+
+    
   });
 
   setTimeout(updateDateTime, 1000);
