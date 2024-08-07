@@ -83,7 +83,7 @@ function updateDateTime() {
     { className: 'Ruangan_LabTI', day: 5, times: [['07:00', '16:20']]},
 
   ];
- 
+
   const now = new Date();
   const dayName = days[now.getDay()];
   const day = now.getDate();
@@ -93,50 +93,14 @@ function updateDateTime() {
   const minutes = now.getMinutes().toString().padStart(2, '0');
   const seconds = now.getSeconds().toString().padStart(2, '0');
 
-  const dateString = `${dayName}, ${day} ${month} ${year}`;
-  const timeString = `${hours}:${minutes}:${seconds}`;
+    const dateString = `${dayName}, ${day} ${month} ${year}`;
+    const timeString = `${hours}:${minutes}:${seconds}`;
 
-  document.getElementById('date').textContent = dateString;
-  document.getElementById('time').textContent = timeString;
+    document.getElementById('date').textContent = dateString;
+    document.getElementById('time').textContent = timeString;
 
-  // Background color logic
-  const currentTime = now.getHours() * 60 + now.getMinutes(); // Current time in minutes
-
-  schedule.forEach(({ className, day, times }) => {
-    const ruangKelas = document.querySelector(`.${className}`);
-    let isScheduled = false;
-
-    if (day === now.getDay()) {
-      for (const [start, end] of times) {
-        const [startHour, startMinute] = start.split(':').map(Number);
-        const [endHour, endMinute] = end.split(':').map(Number);
-        const startMinutes = startHour * 60 + startMinute;
-        const endMinutes = endHour * 60 + endMinute;
-
-        if (currentTime >= startMinutes && currentTime <= endMinutes) {
-          isScheduled = true;
-          break; // Break if any of the time ranges match
-        }
-      }
-
-      if (ruangKelas) {
-        if (isScheduled) {
-          ruangKelas.classList.add('highlight-red');
-          ruangKelas.classList.remove('highlight-green');
-        } else {
-          ruangKelas.classList.add('highlight-green');
-          ruangKelas.classList.remove('highlight-red');
-        }
-      }
-    }
-
-    
-  });
-
-  setTimeout(updateDateTime, 1000);
+    setTimeout(updateDateTime, 1000);
 }
-
-updateDateTime();
 
 function toggleDropdown() {
   document.getElementById("myDropdown").classList.toggle("show");
@@ -145,20 +109,17 @@ function toggleDropdown() {
 // Tutup dropdown jika pengguna mengklik di luar dropdown
 window.onclick = function(event) {
   if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    for (var i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdowns.length; i++) {
+          var openDropdown = dropdowns[i];
+          if (openDropdown.classList.contains('show')) {
+              openDropdown.classList.remove('show');
+          }
       }
-    }
-  }
-
-  // Close modal if clicked outside of modal
-  if (event.target.classList.contains('modal')) {
-    event.target.style.display = "none";
   }
 }
+
+
 
 function openModal(modalId) {
   document.getElementById(modalId).style.display = "block";
@@ -167,3 +128,22 @@ function openModal(modalId) {
 function closeModal(modalId) {
   document.getElementById(modalId).style.display = "none";
 }
+
+window.onclick = function(event) {
+  if (event.target.classList.contains('modal')) {
+      event.target.style.display = "none";
+  }
+}
+
+// function updateText(modalId, section) {
+//   var modalTextId = "modalText" + modalId.charAt(modalId.length - 2).toUpperCase() + modalId.slice(modalId.length - 1);
+//   var modalTextElement = document.getElementById(modalTextId);
+
+//   if (section === 'FASILITAS') {
+//       modalTextElement.innerText = "Informasi mengenai fasilitas di RUANG LAB TI " + modalId.charAt(modalId.length - 1) + ".";
+//   } else if (section === 'JADWAL') {
+//       modalTextElement.innerText = "Jadwal kegiatan di RUANG LAB TI " + modalId.charAt(modalId.length - 1) + ".";
+//   } else {
+//       modalTextElement.innerText = "Informasi detail tentang RUANG LAB TI " + modalId.charAt(modalId.length - 1) + ".";
+//   }
+// }
