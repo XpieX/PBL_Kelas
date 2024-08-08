@@ -354,3 +354,11 @@ th, td {
     padding: 15px;
     text-align: left;
 }
+
+.highlight-red {
+    background-color: #dd2c00;
+}
+
+.highlight-green {
+    background-color: #28a745;
+}

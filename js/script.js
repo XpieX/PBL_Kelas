@@ -3,9 +3,85 @@ function updateDateTime() {
   const months = ['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'];
 
   const schedule = [
-    { className: 'Ruangan_kelas_11', day: 2, times: [['08:00', '10:00'], ['15:00', '16:00']] }, // Senin
-    { className: 'Ruangan_kelas_12', day: 3, times: [['12:00', '13:00'], ['15:00', '16:00']] }, // Rabu
-    // Add more schedules as needed
+    // hari senin
+    { className: 'Ruang_TI_1', day: 1, times: [['07:00', '15:50']]},
+    { className: 'Ruang_TI_2', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_3', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_4', day: 1, times: [['07:00', '15:50']]},
+    { className: 'Ruang_TI_5', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_6', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_7', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_8', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_9', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_10', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_kelas_11', day: 1, times: []},
+    { className: 'Ruangan_kelas_12', day: 1, times: [['07:00', '15:00']]}, 
+    { className: 'Ruangan_kelas_13', day: 1, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_LabTI', day: 1, times: [['07:00', '15:50']]},
+
+    // hari selasa
+    { className: 'Ruang_TI_1', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_2', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_3', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_4', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_5', day: 2, times: [['07:00', '15:50']]},
+    { className: 'Ruang_TI_6', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_7', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_8', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_9', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_10', day: 2, times: [['07:00', '09:30'], ['10:00', '11:40'], ['12:30', '14:10']]},
+    { className: 'Ruangan_kelas_11', day: 2, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_kelas_12', day: 2, times: [['07:00', '15:00']]}, 
+    { className: 'Ruangan_kelas_13', day: 2, times: [['07:00', '15:50']]},
+    { className: 'Ruangan_LabTI', day: 2, times: [['07:00', '15:50']]},
+
+    // hari rabu
+    { className: 'Ruang_TI_1', day: 3, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_2', day: 3, times: [['13:20', '15:00']]},
+    { className: 'Ruang_TI_3', day: 3, times: [['13:20', '15:00']]},
+    { className: 'Ruang_TI_4', day: 3, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_5', day: 3, times: [['07:00', '15:50']]},
+    { className: 'Ruang_TI_6', day: 3, times: [['07:00', '15:00'], ['12:30', '15:00']]},
+    { className: 'Ruang_TI_7', day: 3, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_8', day: 3, times: [['07:00', '09:30'], ['10:00', '11:40'], ['12:30', '14:10']]},
+    { className: 'Ruang_TI_9', day: 3, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_10', day: 3, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_kelas_11', day: 3, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_kelas_12', day: 3, times: [['07:00', '15:00']]}, 
+    { className: 'Ruangan_kelas_13', day: 3, times: [['07:00', '15:50']]},
+    { className: 'Ruangan_LabTI', day: 3, times: [['07:00', '15:50']]},
+
+    // hari kamis
+    { className: 'Ruang_TI_1', day: 4, times: [['07:50', '11:40'], ['13:20', '15:00']]},
+    { className: 'Ruang_TI_2', day: 4, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_3', day: 4, times: [['10:00', '14:10']]},
+    { className: 'Ruang_TI_4', day: 4, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_5', day: 4, times: [['07:00', '15:50']]},
+    { className: 'Ruang_TI_6', day: 4, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_7', day: 4, times: [['07:00', '15:00'], ['12:30', '15:00']]},
+    { className: 'Ruang_TI_8', day: 4, times: [['07:00', '15:00']]},
+    { className: 'Ruang_TI_9', day: 4, times: [['07:00', '15:00'], ['12:30', '15:00']]},
+    { className: 'Ruang_TI_10', day: 4, times: [['07:00', '09:30'], ['10:00', '15:00']]},
+    { className: 'Ruangan_kelas_11', day: 4, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_kelas_12', day: 4, times: []}, 
+    { className: 'Ruangan_kelas_13', day: 4, times: [['07:00', '15:00']]},
+    { className: 'Ruangan_LabTI', day: 4, times: [['07:00', '15:50']]},
+
+    // hari jum'at
+    // { className: 'Ruang_TI_1', day: 5, times: [['07:00', '16:20']]},
+    // { className: 'Ruang_TI_2', day: 5, times: [['10:35', '16:20']]},
+    // { className: 'Ruang_TI_3', day: 5, times: [['07:00', '16:20']]},
+    // { className: 'Ruang_TI_4', day: 5, times: [['07:00', '08:40']]},
+    // { className: 'Ruang_TI_5', day: 5, times: [['07:00', '08:40']]},
+    // { className: 'Ruang_TI_6', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
+    // { className: 'Ruang_TI_7', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
+    // { className: 'Ruang_TI_8', day: 5, times: [['07:00', '08:40'], ['08:40', '14:40']]},
+    // { className: 'Ruang_TI_9', day: 5, times: [['07:00', '11:25'], ['13:00', '14:40']]},
+    // { className: 'Ruangan_kelas_11', day: 5, times: []},
+    // { className: 'Ruangan_kelas_12', day: 5, times: [['07:00', '16:20']]}, 
+    // { className: 'Ruangan_kelas_13', day: 5, times: [['07:00', '16:20']]},
+    // { className: 'Ruangan_LabTI', day: 5, times: [['07:00', '16:20']]},
+
   ];
 
   const now = new Date();

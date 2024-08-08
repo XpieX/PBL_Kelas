@@ -1,169 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/lab_lt2.css">
-    
-</head>
-<body onload="updateDateTime()">
-    <script src="js/script.js"></script>
-    <header>
-        <div class="header-content">
-            <img src="images/Logo Elektro Asli.png" alt="Logo" class="logo">
-            <nav>
-                <ul class="Nav">
-                    <li class="Nav-list"><a href="Homepage.html">Beranda</a></li>
-                    <li class="Nav-list"><a href="#" class="active">Ruangan</a></li>
-                    <li class="Nav-list"><a href="login.html">Keluar</a></li>
-                </ul>
-            </nav>
-            <div class="datetime">
-                <span id="date" class="date"></span>
-                <br>
-                <span id="time" class="time"></span>
-            </div>
-        </div>
-    </header>
-    <main>
-        <div class="content">
-            <div class="left-column">
-                <a href="gedung_teori.html">
-                    <h1 class="Gedung">GEDUNG TEORI</h1>
-                </a>
-            </div>
-            <div class="right-column">
-                <div class="dropdown">
-                    <button onclick="toggleDropdown()" class="dropbtn">LAB TI</button>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="lab_lt_1.html" class="Lantai_1">Lantai 1</a>
-                        <a href="#" class="Lantai_2">Lantai 2</a>
-                    </div>
-                </div>
-            </div>
-            <div class="Ruangan">
-                <p class="Ruangan_kelas_11" onclick="openModal('modalRuangan11')">RUANG LAB TI 11</p>
-                <p class="Ruangan_kelas_12" onclick="openModal('modalRuangan12')">RUANG LAB TI 12</p>
-                <p class="Ruangan_kelas_13" onclick="openModal('modalRuangan13')">RUANG LAB TI 13</p>
-                <p class="Ruangan_server_teknisi">RUANG SERVER DAN TEKNISI</p>
-                <img src="images/tangga-removebg-preview.png" alt="gambar tangga">
-            </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="css/lab_lt2.css" />
+	</head>
+	<body onload="updateDateTime()">
+		<script src="js/script.js"></script>
+		<header>
+			<div class="header-content">
+				<img src="images/Logo Elektro Asli.png" alt="Logo" class="logo" />
+				<nav>
+					<ul class="Nav">
+						<li class="Nav-list"><a href="Homepage.html">Beranda</a></li>
+						<li class="Nav-list"><a href="#" class="active">Ruangan</a></li>
+						<li class="Nav-list"><a href="login.html">Keluar</a></li>
+					</ul>
+				</nav>
+				<div class="datetime">
+					<span id="date" class="date"></span>
+					<br />
+					<span id="time" class="time"></span>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="content">
+				<div class="left-column">
+					<a href="gedung_teori.html">
+						<h1 class="Gedung">GEDUNG TEORI</h1>
+					</a>
+				</div>
+				<div class="right-column">
+					<div class="dropdown">
+						<button onclick="toggleDropdown()" class="dropbtn">LAB TI</button>
+						<div id="myDropdown" class="dropdown-content">
+							<a href="lab_lt_1.html" class="Lantai_1">Lantai 1</a>
+							<a href="#" class="Lantai_2">Lantai 2</a>
+						</div>
+					</div>
+				</div>
+				<div class="Ruangan">
+					<p class="Ruangan_kelas_11" onclick="openModal('modalRuangan11')">
+						RUANG LAB TI 11
+					</p>
+					<p class="Ruangan_kelas_12" onclick="openModal('modalRuangan12')">
+						RUANG LAB TI 12
+					</p>
+					<p class="Ruangan_kelas_13" onclick="openModal('modalRuangan13')">
+						RUANG LAB TI 13
+					</p>
+					<p class="Ruangan_server_teknisi">RUANG SERVER DAN TEKNISI</p>
+					<img src="images/tangga-removebg-preview.png" alt="gambar tangga" />
+				</div>
 
-            <div id="modalRuangan11" class="modal">
-                <div class="modal-header">
-                    <span class="close" onclick="closeModal('modalRuangan11')">&times;</span>
-                    <h1>Ruangan TI 11</h1>
-                </div>
-                <div class="modal-content">
-                    <p>Informasi detail tentang RUANG LAB TI 11.</p>
-                    <table>
-                        <tr>
-                            <th>Fasilitas</th>
-                            <th>Jumlah/Detail</th>
-                        </tr>
-                        <tr>
-                            <td>Kursi</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>Meja</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>AC</td>
-                            <td>Ya</td>
-                        </tr>
-                        <tr>
-                            <td>Proyektor</td>
-                            <td>Ya</td>
-                        </tr>
-                        <tr>
-                            <td>Papan Tulis Interaktif</td>
-                            <td>Ya</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+				<div id="modalRuangan11" class="modal">
+					<div class="modal-header">
+						<span class="close" onclick="closeModal('modalRuangan11')"
+							>&times;</span
+						>
+						<h1>Ruangan TI 11</h1>
+					</div>
+					<div class="modal-content">
+						<p>Informasi detail tentang RUANG LAB TI 11.</p>
+						<table>
+							<tr>
+								<th>Fasilitas</th>
+								<th>Jumlah/Detail</th>
+							</tr>
+							<tr>
+								<td>Kursi</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>Meja</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>AC</td>
+								<td>Ya</td>
+							</tr>
+							<tr>
+								<td>Proyektor</td>
+								<td>Ya</td>
+							</tr>
+							<tr>
+								<td>Papan Tulis Interaktif</td>
+								<td>Ya</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 
-            <div id="modalRuangan12" class="modal">
-                <div class="modal-header">
-                    <span class="close" onclick="closeModal('modalRuangan12')">&times;</span>
-                    <h1>Ruangan TI 12</h1>
-                </div>
-                <div class="modal-content">
-                    <p>Informasi detail tentang RUANG LAB TI 12.</p>
-                    <table>
-                        <tr>
-                            <th>Fasilitas</th>
-                            <th>Jumlah/Detail</th>
-                        </tr>
-                        <tr>
-                            <td>Kursi</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>Meja</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>AC</td>
-                            <td>Ya</td>
-                        </tr>
-                        <tr>
-                            <td>Proyektor</td>
-                            <td>Ya</td>
-                        </tr>
-                        <tr>
-                            <td>Papan Tulis Interaktif</td>
-                            <td>Ya</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+				<div id="modalRuangan12" class="modal">
+					<div class="modal-header">
+						<span class="close" onclick="closeModal('modalRuangan12')"
+							>&times;</span
+						>
+						<h1>Ruangan TI 12</h1>
+					</div>
+					<div class="modal-content">
+						<p>Informasi detail tentang RUANG LAB TI 12.</p>
+						<table>
+							<tr>
+								<th>Fasilitas</th>
+								<th>Jumlah/Detail</th>
+							</tr>
+							<tr>
+								<td>Kursi</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>Meja</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>AC</td>
+								<td>Ya</td>
+							</tr>
+							<tr>
+								<td>Proyektor</td>
+								<td>Ya</td>
+							</tr>
+							<tr>
+								<td>Papan Tulis Interaktif</td>
+								<td>Ya</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 
-            <div id="modalRuangan13" class="modal">
-                <div class="modal-header">
-                    <span class="close" onclick="closeModal('modalRuangan13')">&times;</span>
-                    <h1>Ruangan TI 13</h1>
-                </div>
-                <div class="modal-content">
-                    <p>Informasi detail tentang RUANG LAB TI 13.</p>
-                    <table>
-                        <tr>
-                            <th>Fasilitas</th>
-                            <th>Jumlah/Detail</th>
-                        </tr>
-                        <tr>
-                            <td>Kursi</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>Meja</td>
-                            <td>30</td>
-                        </tr>
-                        <tr>
-                            <td>AC</td>
-                            <td>Ya</td>
-                        </tr>
-                        <tr>
-                            <td>Proyektor</td>
-                            <td>Ya</td>
-                        </tr>
-                        <tr>
-                            <td>Papan Tulis Interaktif</td>
-                            <td>Ya</td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-
-        </div>
-    </main>
-    <footer>
-        <div class="isi">
-            <p>Contact us</p>
-        </div>
-    </footer>
-</body>
+				<div id="modalRuangan13" class="modal">
+					<div class="modal-header">
+						<span class="close" onclick="closeModal('modalRuangan13')"
+							>&times;</span
+						>
+						<h1>Ruangan TI 13</h1>
+					</div>
+					<div class="modal-content">
+						<p>Informasi detail tentang RUANG LAB TI 13.</p>
+						<table>
+							<tr>
+								<th>Fasilitas</th>
+								<th>Jumlah/Detail</th>
+							</tr>
+							<tr>
+								<td>Kursi</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>Meja</td>
+								<td>30</td>
+							</tr>
+							<tr>
+								<td>AC</td>
+								<td>Ya</td>
+							</tr>
+							<tr>
+								<td>Proyektor</td>
+								<td>Ya</td>
+							</tr>
+							<tr>
+								<td>Papan Tulis Interaktif</td>
+								<td>Ya</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="isi">
+				<p>Contact us</p>
+			</div>
+		</footer>
+	</body>
 </html>

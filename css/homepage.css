@@ -139,3 +139,10 @@ header, main{
     }
 }
 
+.highlight-red {
+    background-color: #dd2c00;
+}
+
+.highlight-green {
+    background-color: #28a745;
+}
