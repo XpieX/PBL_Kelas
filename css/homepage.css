@@ -119,11 +119,16 @@ footer{
     width: 100%;
     background: #D32F2F;
 }
-.isi p{
-    font-size: 20px;
-    margin-left: 5%;
-    margin-right: 5%;
-    color: yellow;
+
+.isi{
+    display: flex;
+    
+}
+
+.isi img{
+    width: 10%;
+    justify-content: flex-end;
+    height: auto;
 }
 
 header, main{

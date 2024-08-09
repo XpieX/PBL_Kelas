@@ -16,7 +16,6 @@ function signupForm(e) {
     var json = JSON.stringify(user);
     localStorage.setItem(nim, json);
     console.log('User telah ditambahkan dengan status pending');
-    window.location.href = 'login.html';
 }
 
 function loginForm(e) {
@@ -30,13 +29,13 @@ function loginForm(e) {
     console.log(data);
 
     if (user == null) {
-        alert('Akun tidak terdaftar');
+        result.innerHTML = 'Akun tidak terdaftar';
     } else if (data.status === 'pending') {
-        alert('Akun belum disetujui oleh admin');
+        result.innerHTML = 'Akun Anda belum dikonfirmasi!';
     } else if (nim == data.nim && password == data.password) {
         window.location.href = 'homepage.html';
     } else {
-        alert('Password anda salah!');
+        result.innerHTML = 'Password Anda salah!';
     }
 }
 
