@@ -77,6 +77,7 @@ function updateDateTime() {
     { className: 'Ruang_TI_7', day: 5, times: [['07:00', '09:30'], ['10:00', '11:25'], ['13:30', '14:10']]},
     { className: 'Ruang_TI_8', day: 5, times: [['07:00', '08:40'], ['08:40', '14:40']]},
     { className: 'Ruang_TI_9', day: 5, times: [['07:00', '11:25'], ['13:00', '14:40']]},
+    { className: 'Ruang_TI_10', day: 5, times: []},
     { className: 'Ruangan_kelas_11', day: 5, times: []},
     { className: 'Ruangan_kelas_12', day: 5, times: [['07:00', '16:20']]}, 
     { className: 'Ruangan_kelas_13', day: 5, times: [['07:00', '16:20']]},

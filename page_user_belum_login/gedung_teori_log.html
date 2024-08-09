@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ruangan Page</title>
+		<link rel="stylesheet" href="../css/gedung_teori.css" />
+	</head>
+	<body onload="updateDateTime()">
+		<header>
+			<div class="header-content">
+				<img src="../images/Logo Elektro Asli.png" alt="Logo" class="logo" />
+				<nav>
+					<ul class="Nav">
+						<li class="Nav-list"><a href="Homepage_log.html">Beranda</a></li>
+						<li class="Nav-list"><a href="#" class="active">Ruangan</a></li>
+						<li class="Nav-list"><a href="l../ogin.html">Keluar</a></li>
+					</ul>
+				</nav>
+				<div class="datetime">
+					<span id="date" class="date"></span>
+					<br />
+					<span id="time" class="time"></span>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="content">
+				<div class="left-column">
+					<a href="#">
+						<h1 class="Gedung">GEDUNG TEORI</h1>
+					</a>
+				</div>
+				<div class="right-column">
+					<a href="lab_lt_1_log.html">
+						<h1 class="Lab">LAB TI</h1>
+					</a>
+				</div>
+			</div>
+		</main>
+		<div class="list-kelas_atas">
+			<a href="#" class="blank"></a>
+			<a href="#" class="Ruang_TI_10" onclick="openModal('Ruang_TI_10')"
+				>TI 10</a
+			>
+			<a href="#" class="Ruang_TI_9" onclick="openModal('Ruang_TI_9')">TI 9</a>
+			<a href="#" class="Ruang_TI_8" onclick="openModal('Ruang_TI_8')">TI 8</a>
+			<a href="#" class="Ruang_TI_7" onclick="openModal('Ruang_TI_7')">TI 7</a>
+			<a href="#" class="blank"></a>
+		</div>
+		<div class="grid-container">
+			<div class="list-kelas_kiri">
+				<a href="#" class="blank"></a>
+				<a href="#" class="blank"></a>
+				<a href="#" class="blank"></a>
+				<a href="#" class="blank"></a>
+				<a href="#" class="blank"></a>
+			</div>
+			<div class="taman-container">
+				<img src="../images/tamantangga.png" alt="Taman" class="taman" />
+			</div>
+			<div class="list-kelas_kanan">
+				<a href="#" class="blank"></a>
+				<a href="#" class="blank"></a>
+				<a href="#" class="blank"></a>
+				<a href="#" class="Ruang_TI_6" onclick="openModal('Ruang_TI_6')"
+					>TI 6</a
+				>
+				<a href="#" class="Ruang_TI_5" onclick="openModal('Ruang_TI_5')"
+					>TI 5</a
+				>
+			</div>
+		</div>
+		<div class="list-kelas_Bawah">
+			<a href="#" class="Ruang_TI_1" onclick="openModal('Ruang_TI_1')">TI 1</a>
+			<a href="#" class="Ruang_TI_2" onclick="openModal('Ruang_TI_2')">TI 2</a>
+			<a href="#" class="Ruang_TI_3" onclick="openModal('Ruang_TI_3')">TI 3</a>
+			<a href="#" class="Ruang_TI_4" onclick="openModal('Ruang_TI_4')">TI 4</a>
+		</div>
+
+		<div id="Ruang_TI_10" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_10')">&times;</span>
+				<h1>Ruangan TI 10</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 10.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_9" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_9')">&times;</span>
+				<h1>Ruangan TI 9</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 9.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_8" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_8')">&times;</span>
+				<h1>Ruangan TI 8</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 8.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_7" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_7')">&times;</span>
+				<h1>Ruangan TI 7</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 7.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_6" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_6')">&times;</span>
+				<h1>Ruangan TI 6</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 6.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_5" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_5')">&times;</span>
+				<h1>Ruangan TI 5</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 5.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_4" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_4')">&times;</span>
+				<h1>Ruangan TI 4</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 4.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_3" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_3')">&times;</span>
+				<h1>Ruangan TI 3</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 3.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_2" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_2')">&times;</span>
+				<h1>Ruangan TI 2</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 2.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+		<div id="Ruang_TI_1" class="modal">
+			<div class="modal-header">
+				<span class="close" onclick="closeModal('Ruang_TI_1')">&times;</span>
+				<h1>Ruangan TI 1</h1>
+			</div>
+			<div class="modal-content">
+				<p>Informasi detail tentang RUANG LAB TI 4.</p>
+				<table>
+					<tr>
+						<th>Fasilitas</th>
+						<th>Jumlah/Detail</th>
+					</tr>
+					<tr>
+						<td>Kursi</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>Meja</td>
+						<td>30</td>
+					</tr>
+					<tr>
+						<td>AC</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Proyektor</td>
+						<td>Ya</td>
+					</tr>
+					<tr>
+						<td>Papan Tulis Interaktif</td>
+						<td>Ya</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+
+		<script src="../js/script.js"></script>
+	</body>
+	<footer>
+		<div class="isi">
+			<p>Contact us</p>
+		</div>
+	</footer>
+</html>
