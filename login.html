@@ -1,34 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Login</title>
-    <link rel="stylesheet" href="css/login.css">   
-</head>
-<body>
-    <div class="container">
-        <div class="left">
-            <img src="images/Logo Elektro Asli.png" alt="logo">
-        </div>
-        <div class="login">
-            <form onsubmit="loginForm()">
-                <h1>Login</h1>
-                <p id="result"></p>
-                <hr>
-                <input type="text" id="nim" name="nim" placeholder="NIM">
-                <input type="password" id="password" name="password" placeholder="Password">
-                <button id="loginButton"type="submit">Login</button>
-                <p>
-                    <a href="register.html">Daftar Akun</a> 
-                </p>
-                <p>
-                    <a href="reset.html">Lupa Password?</a>
-                </p>
-            </form>
-        </div>
-    </div>
-    <script src="./scriptlogin.js"></script>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Login</title>
+		<link rel="stylesheet" href="css/login.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="left">
+				<img src="images/Logo Elektro Asli.png" alt="logo" />
+			</div>
+			<div class="login">
+				<form onsubmit="loginForm()">
+					<h1>Login</h1>
+					<p id="result"></p>
+					<hr />
+					<input type="text" id="nim" name="nim" placeholder="NIM" />
+					<input
+						type="password"
+						id="password"
+						name="password"
+						placeholder="Password"
+					/>
+					<button id="loginButton" type="submit">Login</button>
+					<p>
+						<a href="register.html">Daftar Akun</a>
+					</p>
+					<p>
+						<a href="reset.html">Lupa Password?</a>
+					</p>
+					<p>
+						<a href="user_list.html">Lihat user</a>
+					</p>
+					<p>
+						<a href="user_register.html">Lihat regiter</a>
+					</p>
+				</form>
+			</div>
+		</div>
+		<script src="./scriptlogin.js"></script>
+	</body>
 </html>
-                                                        
