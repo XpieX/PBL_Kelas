@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Form Booking Kelas</title>
+		<link rel="stylesheet" href="css/booking.css" />
+	</head>
+	<body>
+		<div class="booking-form-container">
+			<h2>Form Booking Kelas</h2>
+			<form onsubmit="bookingForm()">
+				<label for="name">Nama:</label>
+				<input type="text" id="name" name="name" required />
+				<label for="ids">NIM/NIP:</label>
+				<input type="ids" id="ids" name="ids" required />
+				<label for="phone">Nomor Telepon:</label>
+				<input type="tel" id="phone" name="phone" required />
+				<label for="date">Tanggal:</label>
+				<input type="date" id="date" name="date" required />
+				<label for="time">Waktu:</label>
+				<input type="time" id="time" name="time" required />
+				<button type="submit">Booking Sekarang</button>
+			</form>
+		</div>
+
+		<script src="js/booking.js"></script>
+	</body>
+</html>

@@ -1,0 +1,43 @@
+  .modal-content .info-container {
+      text-align: center;
+      /* Centers the text and button */
+      margin-bottom: 20px;
+      /* Adds space between the button and the table */
+  }
+
+  .modal-content .info-container p {
+      margin: 0 0 10px 0;
+      /* Space between the text and button */
+  }
+
+  .modal-content .info-container button {
+      background-color: #4CAF50;
+      /* Green background */
+      color: white;
+      /* White text */
+      border: none;
+      /* No border */
+      padding: 10px 20px;
+      /* Some padding */
+      text-align: center;
+      /* Centered text */
+      text-decoration: none;
+      /* Remove underline */
+      display: inline-block;
+      /* Make the button inline */
+      font-size: 16px;
+      /* Increase font size */
+      margin-top: 10px;
+      /* Space between the text and button */
+      border-radius: 5px;
+      /* Rounded corners */
+      cursor: pointer;
+      /* Pointer cursor on hover */
+      transition: background-color 0.3s ease;
+      /* Smooth background-color change on hover */
+  }
+
+  .modal-content .info-container button:hover {
+      background-color: #45a049;
+      /* Slightly darker green on hover */
+  }
