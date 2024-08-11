@@ -24,6 +24,12 @@ function loginForm(e) {
     var password = document.getElementById("password").value;
     var result = document.getElementById("result");
 
+    // Cek kredensial admin
+    if (nim === 'admin' && password === 'admin') {
+        window.location.href = 'page_admin/gedung_teori_log.html';
+        return;
+    }
+
     var user = localStorage.getItem(nim);
     var data = JSON.parse(user);
     console.log(data);

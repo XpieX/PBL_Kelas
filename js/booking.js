@@ -1,25 +1,20 @@
-function bookingForm(e){
+document.getElementById('dataForm').addEventListener('submit', function(event) {
+    // Mencegah perilaku default pengiriman formulir
     event.preventDefault();
-    var name = document.getElementById('name').value;
-    var ids = document.getElementById('ids').value;
-    var phone = document.getElementById('phone').value;
-    var date = document.getElementById('date').value;
-    var time = document.getElementById('time').value;
 
-    var bookingData = {
-        name,
-        ids,
-        phone,
-        date,
-        time
+    // Mengambil nilai-nilai dari formulir
+    const username = document.getElementById('username').value;
+    const email = document.getElementById('email').value;
+
+    // Membuat objek untuk menyimpan data
+    const userData = {
+        username: username,
+        email: email
     };
 
-    var json = JSON.stringify(bookingData);
-    localStorage.setItem(ids, json);
-    console.log('Booking Details:', bookingData);
+    // Menyimpan data ke Local Storage
+    localStorage.setItem('userData', JSON.stringify(userData));
 
-    // Reset form
-    // document.getElementById('bookingForm').reset();
-
-    alert('Booking berhasil!');
-}
+    // Opsional: Memberi tahu pengguna atau melakukan tindakan tambahan
+    alert('Data telah disimpan di Local Storage!');
+});

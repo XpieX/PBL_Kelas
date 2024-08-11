@@ -1,58 +1,18 @@
-			/* Gaya untuk tabel */
-			table {
-                margin: 5px;
-			    width: 100%;
-			    border-collapse: collapse;
-			}
-
-			th,
-			td {
-			    border: 1px solid #ddd;
-			    padding: 8px;
-			    text-align: left;
-			}
-
-			th {
-			    background-color: #f2f2f2;
-			}
-
-			tr:nth-child(even) {
-			    background-color: #f9f9f9;
-			}
-
-			tr:hover {
-			    background-color: #ddd;
-			}
-
-			/* Gaya untuk tombol */
-			button {
-			    padding: 5px 10px;
-			    border: none;
-			    cursor: pointer;
-			}
-
-			button.edit {
-			    background-color: yellow;
-			    color: black;
-			}
-
-			button.delete {
-			    background-color: red;
-			    color: white;
-			}
 body {
     background-color: #F5F5F5;
 
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 main {
-    margin: 0% 5%;
+    margin: 0% 10%;
     align-items: center;
     /* display: flex; */
     background-color: #F5F5F5;
     padding: 10px 0;
 }
+
 header {
     background-color: #D32F2F;
     color: white;
@@ -106,6 +66,7 @@ nav a {
 #active {
     color: #000000;
 }
+
 .content {
     display: flex;
     justify-content: space-around;
@@ -152,7 +113,8 @@ footer {
     justify-content: flex-end;
     height: auto;
 }
-.User-list{
+
+.User-booking{
     text-decoration: underline rgb(161, 23, 23);
 }
 
@@ -177,4 +139,7 @@ main {
 
 .highlight-green {
     background-color: #28a745;
+}
+#active {
+    color: #000000;
 }
