@@ -107,3 +107,17 @@ function editUser(nim) {
         displayRegisteredUsers(); // Refresh daftar user setelah pengeditan
     }
 }
+
+function displayUsername() {
+    const nim = localStorage.getItem('loggedInUser');
+    if (nim) {
+        const user = JSON.parse(localStorage.getItem(nim));
+        document.getElementById('username').textContent = `Selamat datang, ${user.name}`;
+    }
+}
+
+// Panggil fungsi displayUsername saat halaman dimuat
+window.onload = function() {
+    updateDateTime(); // Fungsi yang sudah ada
+    displayUsername(); // Tambahkan ini
+};
