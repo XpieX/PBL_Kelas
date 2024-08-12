@@ -35,13 +35,13 @@ function loginForm(e) {
     console.log(data);
 
     if (user == null) {
-        result.innerHTML = 'Akun tidak terdaftar';
+        alert('Akun tidak terdaftar');
     } else if (data.status === 'pending') {
-        result.innerHTML = 'Akun Anda belum dikonfirmasi!';
+        alert('Akun Anda belum dikonfirmasi!');
     } else if (nim == data.nim && password == data.password) {
         window.location.href = 'homepage.html';
     } else {
-        result.innerHTML = 'Password Anda salah!';
+        alert('Password Anda salah!');
     }
 }
 
