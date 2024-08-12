@@ -44,6 +44,10 @@ nav a {
 	display: block;
 }
 
+.time {
+	font-size: 30px;
+}
+
 main {
 	align-items: center;
 	display: flex;
