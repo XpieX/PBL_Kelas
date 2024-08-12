@@ -9,6 +9,18 @@
 	<body onload="updateDateTime();displayUsername();">
 		<script src="js/script.js"></script>
 		<script src="js/scriptlogin.js"></script>
+		<script>
+			// Membaca data dari Local Storage
+			var nama = localStorage.getItem("name");
+
+			// Fungsi untuk menampilkan nama pada halaman
+			function displayUsername() {
+				// Memeriksa apakah nama ada di Local Storage
+				if (nama) {
+					document.getElementById("welcome-name").textContent = nama;
+				}
+			}
+		</script>
 		<header>
 			<div class="header-content">
 				<img src="images/Logo Elektro Asli.png" alt="Logo" class="logo" />
@@ -28,17 +40,16 @@
 		</header>
 		<main>
 			<div class="Welcome">
-				<h1>SELAMAT DATANG</h1>
+				<h1>SELAMAT DATANG <span id="welcome-name"></span></h1>
 				<h2 id="username"></h2>
 				<h2>DI WEBSITE INFORMASI RUANG KELAS</h2>
 				<p>
-					Selamat datang di website informasi ruang kelas. Situs ini menyediakan
-					informasi lengkap tentang jadwal penggunaan ruang kelas di gedung teori dan
-					gedung Lab Terdapat juga details mengenai ruangan dan informasi penting
-					lainnya dengan mudah dan cepat. Kami berkomitmen untuk memberikan data yang
-					sesuai dan terkini agar Anda dapat mengatur waktu dan belajar dengan baik.
-					Nikmati pengalaman yang lebih baik dalam mengakses informasi ruang kelas di
-					sini.
+					Situs ini menyediakan informasi lengkap tentang jadwal penggunaan ruang
+					kelas di gedung teori dan gedung Lab Terdapat juga details mengenai ruangan
+					dan informasi penting lainnya dengan mudah dan cepat. Kami berkomitmen
+					untuk memberikan data yang sesuai dan terkini agar Anda dapat mengatur
+					waktu dan belajar dengan baik. Nikmati pengalaman yang lebih baik dalam
+					mengakses informasi ruang kelas di sini.
 				</p>
 
 				<img src="images/kalender.png" alt="Logo" class="calender" />
@@ -46,7 +57,30 @@
 		</main>
 		<footer>
 			<div class="isi">
-				<p>Contact us</p>
+				<a href="mailto" class="email">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke-width="1.5"
+						stroke="currentColor"
+						class="size-6"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+						/>
+					</svg>
+					<p>teknikinformatika@gmail.com</p>
+				</a>
+				<a href="" class="ig">
+					<img src="images/iconmonstr-instagram-11-240.png" alt="" />
+					<p>teknik.informatika.polnep</p>
+				</a>
+			</div>
+			<div class="copyright">
+				<p>Copyright &copy; by Tim Informasi Ruang Kelas 4B</p>
 			</div>
 		</footer>
 	</body>
