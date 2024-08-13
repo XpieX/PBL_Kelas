@@ -5,6 +5,13 @@ function signupForm(e) {
     var email = document.getElementById("email").value;
     var password = document.getElementById("password").value;
 
+
+    if (localStorage.getItem(nim) !== null) {
+        alert('Akun dengan NIM ini sudah terdaftar.');
+        window.location.href = 'login.html';
+        return;// Keluar dari fungsi jika akun sudah terdaftar
+    }
+    
     var user = {
         name: name,
         nim: nim,
@@ -15,7 +22,7 @@ function signupForm(e) {
 
     var json = JSON.stringify(user);
     localStorage.setItem(nim, json);
-    console.log('User telah ditambahkan dengan status pending');
+    alert ('User telah ditambahkan dengan status pending');
 }
 
 function loginForm(e) {
